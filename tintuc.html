@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tin tức iPhone - iPhoneSTORE</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-container h2 {
+      margin: 0.5rem 0;
+    }
+
+    nav {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin: 0 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav a.active {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .news-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .news-card:hover {
+      transform: scale(1.02);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-card-content {
+      padding: 1rem;
+    }
+
+    .news-card h3 {
+      color: #007BFF;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .news-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h2>iPhoneSTORE - Tin tức iPhone</h2>
+      <nav>
+        <ul>
+          <li><a href="trangchu (1).html">Trang chủ</a></li>
+          <li><a href="sanpham.html">Sản phẩm</a></li>
+          <li><a href="tintuc.html" class="active">Tin tức</a></li>
+          <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Tin tức mới nhất về iPhone</h1>
+
+    <div class="news-grid">
+      <!-- Bài viết 1 -->
+      <div class="news-card">
+        <div class="news-card-content">
+          <h3>iPhone 15 chính thức ra mắt: 4 phiên bản, nhiều nâng cấp đột phá</h3>
+          <p>Apple vừa trình làng dòng iPhone 15 với camera được thiết kế lại, chip A17 Bionic mạnh mẽ và màn hình Always-On...</p>
+          <a class="read-more" href="https://www.apple.com/vn/newsroom/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/">Đọc thêm</a>
+        </div>
+      </div>
+
+      <!-- Bài viết 2 -->
+      <div class="news-card">
+        <div class="news-card-content">
+          <h3>iOS 18 ra mắt với AI tích hợp, thay đổi lớn nhất trong lịch sử</h3>
+          <p>Bản cập nhật iOS 18 mang đến trợ lý AI thông minh, tùy biến giao diện chưa từng có và khả năng tương thích với iPhone từ đời XR trở lên...</p>
+          <a class="read-more" href="https://www.apple.com/vn/newsroom/2024/09/ios-18-is-available-today-making-iphone-more-personal-and-capable-than-ever/">Đọc thêm</a>
+        </div>
+      </div>
+
+      <!-- Bài viết 3 -->
+      <div class="news-card">
+        <div class="news-card-content">
+          <h3>Loạt iPhone cũ giảm giá mạnh sau khi iPhone 16 ra mắt</h3>
+          <p>Thị trường iPhone cũ đang có đợt giảm giá sốc, đặc biệt là các model iPhone 14, 15 series với mức giảm lên tới 30%...</p>
+          <a class="read-more" href="https://vietnamfinance.vn/gia-iphone-16-giam-dong-loat-iphone-cu-giam-sap-san-co-nen-mua-ngay-d129309.html">Đọc thêm</a>
+        </div>
+      </div>
+
+      <!-- Bài viết 4 -->
+      <div class="news-card">
+        <div class="news-card-content">
+          <h3>Apple bắt đầu sản xuất iPhone 16 tại Việt Nam từ quý 4/2025</h3>
+          <p>Lần đầu tiên trong lịch sử, Apple sẽ sản xuất dòng iPhone flagship ngay tại Việt Nam, dự kiến giá bán sẽ tốt hơn...</p>
+          <a class="read-more" href="https://vnexpress.net/iphone-16-bat-dau-mo-ban-toan-cau-4794865.html">Đọc thêm</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 iPhoneSTORE. Bản quyền được bảo hộ.</p>
+  </footer>
+
+</body>
+</html>
